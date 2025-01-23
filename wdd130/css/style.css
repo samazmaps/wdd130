@@ -12,14 +12,24 @@ h1    {
 
 } 
 
-img   {
+main img   {
        width:150px;
        height:auto;
        border: 1px solid black;
        padding:2px;
        box-shadow:0 0 30px gray;
 }
-    p {
-        padding:10px;
-}
 
+main aside img{
+    width: 150px;
+    height: auto;
+
+}
+    p {
+        padding:0;
+}
+footer{
+    margin-top: 10px; /*adding top margin*/
+    border-top: 2px #000000 solid;/*adding boarder,thichness,color,type of border*/
+    text-align: center;
+}
