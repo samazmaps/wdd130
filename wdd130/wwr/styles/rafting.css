@@ -1,0 +1,52 @@
+ :root{ 
+    --primary-color:#008000;
+    --secondary-color : #FFA500;
+ --accent1-color:#FF0000;
+    --accent2-color:#0000FF;
+ } 
+nav a{
+    text-decoration: none;
+}
+ h1,h2{ 
+    color:var(--accent2-color);
+    font-family: Verdana;
+}
+.hero {
+    position: relative; 
+    text-align: center;  
+}
+.hero img{
+    width: 100%;
+    height: auto;
+    float: right;
+} 
+
+h1{
+    color: var(--accent2-color);
+    font-family: Verdana;
+    z-index: 2; /* Add this line to bring the H1 to the front */
+    position: absolute;
+    left: 50%; /* Adjust the position of the H1 */
+    transform: translate(-50%, 0); /* Center the H1 horizontally */
+    background: rgba(0, 0, 0, 0.288);
+    width: 100%;
+}
+.hero article{
+    position: absolute;
+    top:30vh;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background: var(--secondary-color);
+    width: 80%;
+    padding: 20px;
+}
+
+.hero article img{
+    width: 10%;
+    height: auto;
+}
+
+
+footer a {
+    text-decoration: none;
+}
