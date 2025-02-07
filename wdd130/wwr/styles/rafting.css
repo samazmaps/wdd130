@@ -1,12 +1,10 @@
- :root{ 
+:root{ 
     --primary-color:#008000;
     --secondary-color : #FFA500;
  --accent1-color:#FF0000;
     --accent2-color:#0000FF;
  } 
-nav a{
-    text-decoration: none;
-}
+
  h1,h2{ 
     color:var(--accent2-color);
     font-family: Verdana;
@@ -33,7 +31,7 @@ h1{
 }
 .hero article{
     position: absolute;
-    top:30vh;
+    top: 20vh;
     left:50%;
     transform: translate(-50%, -50%);
     background: var(--secondary-color);
@@ -46,7 +44,122 @@ h1{
     height: auto;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--accent2-color);
+}
 
-footer a {
+header nav {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--primary-color);
+    width: 200px;
+}
+
+header nav a {
+    color: var(--secondary-color);
+    padding: 10px 15px;
     text-decoration: none;
+    font-family: Verdana;
+    border: 1px solid var(--secondary-color);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    color: var(--header-text-color);
+    font-family: Verdana;
+    
+    
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer-icons a {
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.adventures {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.adventures h2 {
+    text-align: center;
+    font-family: Verdana;
+}
+
+.adventure-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* creates 5 equal grid columns with a size defined 1fr*/
+    gap: 20px; /* seperates the grid images with a 20px gap */
+    align-items: center;
+    justify-items: center;
+}
+
+.adventure-grid figure {
+    margin: 0;
+}
+
+.adventure-grid img {
+    width: 100%;
+    height: auto;
+}
+
+.adventure-grid figcaption {
+    font-family: Verdana;
+    color: #333;
+    margin-top: 10px;
+}
+
+
+.history {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.history h2 {
+    text-align: center;
+    font-family: Verdana;
+}
+
+.history-content {
+    display: grid;/* create a grid templated display*/
+    grid-template-columns: 1fr auto 1fr; /* creating the columns required and their number of columns*/
+    gap: 20px;
+    align-items: center;
+}
+
+.history-content img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    justify-self: center;
+}
+
+.history-content p {
+    font-family: Verdana;
+    margin: 10px 0;
 }
