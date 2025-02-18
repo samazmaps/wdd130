@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Verdana">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/logo.png" alt="">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About us</a>
+            <a href="Trips.html">Trips</a>
+            <a href="contact.html">Contact</a>
+        </nav> 
+    </header>
+    <main>
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="purpose">Purpose of Message:</label>
+                <div>
+                    <input type="radio" id="general" name="purpose" value="General Inquiry" required>
+                    <label for="general">General Inquiry</label>
+                </div>
+                <div>
+                    <input type="radio" id="reservation" name="purpose" value="Reservation Question" required>
+                    <label for="reservation">Reservation Question</label>
+                </div>
+                <div>
+                    <input type="radio" id="website" name="purpose" value="Website Suggestion" required>
+                    <label for="website">Website Suggestion</label>
+                </div>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <div>
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                </div>
+                
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+            <div class="company-info">
+                <h3>Company Information</h3>
+                <p><strong>Address:</strong> 123 River Road, Rapids City, RC 12345</p>
+                <p><strong>Phone:</strong> (123) 456-7890</p>
+                <p><strong>Email:</strong> info@splashrafting.com</p>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15191.716893613997!2d31.110004115483484!3d-17.841952505328354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1931bb79e4d1fd79%3A0xe1faea2985fec07c!2sMsasa%20Industrial%20Training%20College!5e0!3m2!1sen!2szw!4v1739426161467!5m2!1sen!2szw" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+        <section class="employees">
+            <h3>Our Team</h3>
+            <div class="employee">
+                <img src="images/employee1.jpg" alt="Employee 1">
+                <p>John Doe - Guide</p>
+            </div>
+            <div class="employee">
+                <img src="images/employee2.jpg" alt="Employee 2">
+                <p>Jane Smith - Manager</p>
+            </div>
+            <div class="employee">
+                <img src="images/employee3.jpg" alt="Employee 3">
+                <p>Emily Johnson - Customer Service</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Splash Whitewater Rafting Sarah Mapfumo</p>
+        <div class="footer-icons">
+            <a href=""><img src="images/1_Facebook_colored_svg_copy-64.webp" alt="Facebook"></a>
+            <a href=""><img src="images/2504957.png" alt="Twitter"></a>
+            <a href=""><img src="images/3046121.png" alt="Instagram"></a>
+        </div>
+    </footer>
+</body>
+</html>
