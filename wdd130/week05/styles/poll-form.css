@@ -1,0 +1,124 @@
+/* 1. Add a font(s) of your choice */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* 2. Style the universal selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 3. Style the body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* 4. Style the header and h1 */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* 5. Style the form */
+form {
+    width: 80%;
+    margin: 2rem auto;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    display: grid;
+    gap: 1rem;
+}
+
+/* 6. Style each fieldset */
+fieldset {
+    display: grid;
+    gap: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+/* 7. Style the fieldset legend */
+legend {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* 8. Option: Style all the form elements */
+label, input, button, select, textarea {
+    font-family: 'Arial', sans-serif;
+}
+
+/* 9. Style the label elements */
+label {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+/* 10. Style the input, select, and textarea elements */
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+/* 11. Style the checkbox element */
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    vertical-align: bottom;
+}
+
+/* 12. Style the button */
+button {
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* 13. Style the footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* 14. Style the .form-item class selector */
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+/* 15. Style the .column1 class selector */
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+}
+
+/* 16. Style the .column2 class selector */
+.column2 {
+    grid-template-columns: 1fr 2fr;
+    margin: 0.5rem 0;
+}

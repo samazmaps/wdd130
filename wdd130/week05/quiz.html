@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Quiz</title>
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+<body>
+    <header>
+        <h1> Quiz</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Quiz Questions</legend>
+                
+                <!-- Question 1: Text input -->
+                <div class="form-item">
+                    <label for="q1">What does HTML stand for?</label>
+                    <input type="text" id="q1" name="q1">
+                </div>
+                
+                <!-- Question 2: Textarea -->
+                <div class="form-item">
+                    <label for="q2">Describe the purpose of CSS.</label>
+                    <textarea id="q2" name="q2" rows="4" placeholder="Enter your answer here..."></textarea>
+                </div>
+                
+                <!-- Question 3: Select -->
+                <div class="form-item">
+                    <label for="q3">Which of the following is a CSS framework?</label>
+                    <select id="q3" name="q3">
+                        <option value="" selected disabled>Choose One ...</option>
+                        <option value="bootstrap">Bootstrap</option>
+                        <option value="jquery">jQuery</option>
+                        <option value="react">React</option>
+                    </select>
+                </div>
+                
+                <!-- Question 4: Number input -->
+                <div class="form-item">
+                    <label for="q4">How many heading levels are there in HTML?</label>
+                    <input type="number" id="q4" name="q4" min="1" max="6">
+                </div>
+                
+                <!-- Submit button -->
+                <button type="submit">Submit Quiz</button>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
